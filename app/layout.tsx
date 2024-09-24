@@ -8,7 +8,7 @@ import { ConvexClientProvider } from '../providers/ConvexClientProvider';
 import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
-  title: 'Chat App',
+  title: 'Secret Chat App',
   description: 'Realtime chat app using Nextjs',
 };
 
