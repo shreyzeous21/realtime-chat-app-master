@@ -36,7 +36,7 @@ This project is a real-time chat application built with Next.js, using Clerk for
    CONVEX_DEPLOY_KEY=
    ```
 
-   Refer to `.env.example.local` for any additional required variables.
+   Refer to `.env.example` for any additional required variables.
 
 5. **Set Up Clerk Webhook**
    In your Clerk dashboard, set up a webhook with the Convex URL in this format:
@@ -59,8 +59,8 @@ This project is a real-time chat application built with Next.js, using Clerk for
    export default {
      providers: [
        {
-         domain: 'https://your-clerk-issuer-url',
-         applicationID: 'convex',
+         domain: "https://your-clerk-issuer-url",
+         applicationID: "convex",
        },
      ],
    };
@@ -103,3 +103,9 @@ For more detailed information on configuring Clerk and Convex, please refer to t
 - [Clerk Documentation](https://clerk.com/docs)
 - [Convex Documentation](https://docs.convex.dev/)
 - [Next.js Documentation](https://nextjs.org/docs)
+
+# For deploy to vercel
+## Overwrite this command in vercel before deploying
+```
+npx convex deploy --cmd 'npm run build'
+```
