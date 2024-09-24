@@ -33,6 +33,7 @@ This project is a real-time chat application built with Next.js, using Clerk for
    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
    CLERK_SECRET_KEY=
    CLERK_WEBHOOK_SECRET=
+   CONVEX_DEPLOY_KEY=
    ```
 
    Refer to `.env.example.local` for any additional required variables.
